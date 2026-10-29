@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
+import Votacao from './pages/Votacao';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/votacao" element={<Votacao />} />
       </Routes>
       <footer className="rodape">DIAW 2026, PUC Minas</footer>
     </BrowserRouter>
